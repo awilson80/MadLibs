@@ -18,7 +18,8 @@
         <div id="content">
             <h1 class="text-center">Dragon Friend Mad Libs!</h1>
                 <p>Fill in the textboxes below to complete the story, or select "decide my fate!"</p>
-
+                <br>
+                
                 <form action="#dragonStory" method="post" onsubmit="submitInputs(); return false">
 
                     <!-- Inputs below -->
@@ -136,15 +137,20 @@
                         <div class="col-sm-7">
                             <input class="form-control" id="input13" placeholder="A nickname" required="" type="text">
                         </div>
-                    </div>
+                    </div><br>
 
 
-
+                
                     <div class="form-group row">
-                        <button class="btn btn-info" type="submit">Submit</button> - <button class="btn btn-light" onclick="clearForm()" type="button">Clear</button> - <button class="btn btn-success" onclick="autoFill()" type="button">Decide My Fate!</button>
+                        <div id="button-space">
+                            <button class="btn btn-info button-space" type="submit">Submit</button> - 
+                            <button class="btn btn-light button-space" onclick="clearForm()" type="button">Clear</button> - 
+                            <button class="btn btn-success button-space" onclick="autoFill()" type="button">Decide My Fate!</button>
+                        </div>
                     </div>
+                    <br>
                   </form>
-
+                  </div>
                   <div id="dragonStory"></div>
                   <footer>
                       <p>Mad Lib sourced from <a href="https://www.woojr.com/printable-dragon-activity-pages/printable-dragon-fantasy-adlib/">Best Friends With a Dragon!</a> from <em>Woo! Jr. Kids Activities</em></em></p>

@@ -7,7 +7,7 @@ let userInputs = {
 // Auto-fill values
 
 const autoWords = {
-    in1:"Haku", in2:"1234", in3:"Daikon", in4:"the spirit world", in5:"distressed", in6:"working", in7:"Haku", in8:"the spirit world", in9:"wicked cool", in10:"living", in11:"life", in12:"vibing", in13:"broski" 
+    in1:"Haku", in2:"1234", in3:"daikon", in4:"the spirit world", in5:"distressed", in6:"working", in7:"Haku", in8:"the spirit world", in9:"wicked cool", in10:"living", in11:"life", in12:"vibing", in13:"broski" 
 };
 
 const dragonStory = "<h1>Best Friends With a Dragon!</h1><p>Let me introduce you to my dragon friend, <span id=\"output1\"></span>! They are <span id=\"output2\"></span> years old, and their favorite food is <span id=\"output3\"></span>. When I was little, I traveled to <span id=\"output4\"></span> with my mom and dad, and me them when I was <span id=\"output5\"></span>, because I'd been <span id=\"output6\"></span> all day long. When <span id=\"output1\"></span> flew right into <span id=\"output7\"></span> and landed right next to me, my mom fainted! But I didn't. I thought my dragon friend looked <span id=\"output8\"></span>, and I burst out laughing, and then they did too! We started talking about how we both like <span id=\"output9\"></span> <span id=\"output10\"></span> and <span id=\"output11\"></span> so I started calling them <span id=\"output12\"></span> and swapped phone numbers to stay in touch!"
