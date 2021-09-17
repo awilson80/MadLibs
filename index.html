@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src=script.js></script>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@200;300;400&display=swap"
+            rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+        <title>Dragon Friend Mad Libs!</title>
+
+    </head>
+
+    <body>
+        <div id="content">
+            <h1 class="text-center">Dragon Friend Mad Libs!</h1>
+                <p>Fill in the textboxes below to complete the story, or select "decide my fate!"</p>
+
+                <form action="#dragonStory" method="post" onsubmit="submitInputs(); return false">
+
+                    <!-- Inputs below -->
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input1">A name</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input1" placeholder="A name" required="" type="text">
+                        </div>                   
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input2">A big number</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input2" placeholder="A big number" required="" type="text">
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input3">A vegetable</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input3" placeholder="A big number" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input4">A place</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input4" placeholder="A place" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input5">An emotion</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input5" placeholder="An emotion" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input6">Verb-ing</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input6" placeholder="A verb ending in -ing" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input7">Same name</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input7" placeholder="Same name" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input8">Same place</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input8" placeholder="Same place" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input9">An adjective</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input9" placeholder="An adjective" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input10">Verb -ing</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input10" placeholder="A verb ending in -ing" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input11">Noun (plural)</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input11" placeholder="Noun (plural)" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input12">A hobby</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input12" placeholder="A hobby" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="input13">A nickname</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="input13" placeholder="A nickname" required="" type="text">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <button class="btn btn-info" type="submit">Submit</button> - <button class="btn btn-light" onclick="clearForm()" type="button">Clear</button> - <button class="btn btn-success" onclick="autoFill()" type="button">Decide My Fate!</button>
+                    </div>
+                  </form>
+
+                  <div id="dragonStory"></div>
+                  <footer>
+                      <p>Mad Lib sourced from <a href="https://www.woojr.com/printable-dragon-activity-pages/printable-dragon-fantasy-adlib/">Best Friends With a Dragon!</a> from <em>Woo! Jr. Kids Activities</em></em></p>
+                  </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

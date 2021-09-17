@@ -1,0 +1,20 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Alice', serif !important;
+}
+
+html body {
+	background-color: #87ceb6d5;
+}
+
+#content, 
+footer {
+	text-align: center;
+}
+
+#content p {
+	margin: 0 auto;
+}
